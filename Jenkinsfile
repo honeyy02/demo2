@@ -1,8 +1,10 @@
 pipeline{
-  agent any
-  docker{
+  agent{
+     docker{
     image 'python:3.8'
   }
+  } 
+ 
   stages{
 //      stage('Check Python Version') {
 //     steps {
