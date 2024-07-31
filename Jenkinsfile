@@ -1,14 +1,14 @@
 pipeline{
   agent any
-  environment{
-    PYTHON_HOME = ' /home/codespace/.python/current/bin/python'
+  docker{
+    image 'python:3.8'
   }
   stages{
-     stage('Check Python Version') {
-    steps {
-        sh '${PYTHON_HOME} --version'
-     }
-}
+//      stage('Check Python Version') {
+//     steps {
+//         sh '${PYTHON_HOME} --version'
+//      }
+// }
     stage('Build'){
       steps{
         
