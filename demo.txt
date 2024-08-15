@@ -1,0 +1,1 @@
+Hello Ansible, the file is uploaded by playbook to git
